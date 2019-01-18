@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "M"
-var adminprefix = 'M'
+var prefix = "6"
+var adminprefix = '6'
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("Mobc")) {
+    if (message.content.startsWith("6obc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "M";
+  var prefix = "6";
 
   client.on("message", message => {
   
@@ -41,7 +41,7 @@ client.on("message", message => {
 
 client.on('message', message => {
     var  user = message.mentions.users.first() || message.author;
-if (message.content.startsWith("Mavatar")) {
+if (message.content.startsWith("6avatar")) {
 message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 }
 });
@@ -72,7 +72,7 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "Mhelp") {
+    if (message.content === "6help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
